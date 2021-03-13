@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="9.823">
+<testcase classname="Validation of Products Page" name="Validation of New Product Creation" time="5.82">
+<failure message="Index: 1, Size: 1" type="java.lang.IndexOutOfBoundsException"><![CDATA[Given user is on product website home page..................................passed
+Then user enters product info "MyMoney" and "4".............................passed
+And user enters the address info "Techtorial", "2200 E Devon", "Des Plaines", "IL", "60018".passed
+* user enters card info "Visa", "123412341234", "04/22".....................passed
+And user validates success message..........................................passed
+Then user validates product details "MyMoney", "4", "Techtorial", "2200 E Devon", "Des Plaines", "IL", "60018", "Visa", "123412341234", "04/22".failed
+
+StackTrace:
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+	at com.sun.proxy.$Proxy15.get(Unknown Source)
+	at steps.com.productsteps.ProductSteps.user_validates_product_details(ProductSteps.java:49)
+	at ✽.user validates product details "MyMoney", "4", "Techtorial", "2200 E Devon", "Des Plaines", "IL", "60018", "Visa", "123412341234", "04/22"(file:///Users/ayhancolakel/Documents/TechtorialCucumberr/src/test/resources/com.products/productsScenario.feature:18)
+]]></failure>
+</testcase>
+<testcase classname="Validation of Products Page" name="Validation of New Product Creation 2" time="1.922">
+<failure message="Index: 1, Size: 1" type="java.lang.IndexOutOfBoundsException"><![CDATA[Given user is on product website home page..................................passed
+Then user enters product info "FamilyAlbum" and "2".........................passed
+And user enters the address info "Academy", "2200 E Devon", "Austin", "TX", "90011".passed
+* user enters card info "MasterCard", "124521541254", "08/21"...............passed
+And user validates success message..........................................passed
+Then user validates product details "FamilyAlbum", "2", "Academy", "2200 E Devon", "Austin", "TX", "90011", "MasterCard", "124521541254", "08/21".failed
+
+StackTrace:
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+	at com.sun.proxy.$Proxy15.get(Unknown Source)
+	at steps.com.productsteps.ProductSteps.user_validates_product_details(ProductSteps.java:49)
+	at ✽.user validates product details "FamilyAlbum", "2", "Academy", "2200 E Devon", "Austin", "TX", "90011", "MasterCard", "124521541254", "08/21"(file:///Users/ayhancolakel/Documents/TechtorialCucumberr/src/test/resources/com.products/productsScenario.feature:18)
+]]></failure>
+</testcase>
+<testcase classname="Validation of Products Page" name="Validation of New Product Creation 3" time="1.802">
+<failure message="Index: 1, Size: 1" type="java.lang.IndexOutOfBoundsException"><![CDATA[Given user is on product website home page..................................passed
+Then user enters product info "ScreenSaver" and "5".........................passed
+And user enters the address info "Techtorial", "2200 E Devon", "Chicago", "IL", "60101".passed
+* user enters card info "American Express", "321654987112", "04/22".........passed
+And user validates success message..........................................passed
+Then user validates product details "ScreenSaver", "5", "Techtorial", "2200 E Devon", "Chicago", "IL", "60101", "American Express", "321654987112", "04/22".failed
+
+StackTrace:
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+	at com.sun.proxy.$Proxy15.get(Unknown Source)
+	at steps.com.productsteps.ProductSteps.user_validates_product_details(ProductSteps.java:49)
+	at ✽.user validates product details "ScreenSaver", "5", "Techtorial", "2200 E Devon", "Chicago", "IL", "60101", "American Express", "321654987112", "04/22"(file:///Users/ayhancolakel/Documents/TechtorialCucumberr/src/test/resources/com.products/productsScenario.feature:18)
+]]></failure>
+</testcase>
+</testsuite>

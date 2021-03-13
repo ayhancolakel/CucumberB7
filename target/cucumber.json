@@ -1,0 +1,553 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-13T17:46:05.117Z",
+        "line": 21,
+        "name": "Validation of New Product Creation",
+        "description": "",
+        "id": "validation-of-products-page;validation-of-new-product-creation;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4294000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user is on product website home page",
+            "match": {
+              "location": "steps.com.productsteps.ProductSteps.user_is_on_product_website_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 393000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user enters product info \"MyMoney\" and \"4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MyMoney\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"4\"",
+                  "offset": 39
+                }
+              ],
+              "location": "steps.com.productsteps.ProductSteps.user_enters_product_info_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 362000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user enters the address info \"Techtorial\", \"2200 E Devon\", \"Des Plaines\", \"IL\", \"60018\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Techtorial\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"2200 E Devon\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"Des Plaines\"",
+                  "offset": 59
+                },
+                {
+                  "val": "\"IL\"",
+                  "offset": 74
+                },
+                {
+                  "val": "\"60018\"",
+                  "offset": 80
+                }
+              ],
+              "location": "steps.com.productsteps.ProductSteps.user_enters_the_address_info(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 415000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user enters card info \"Visa\", \"123412341234\", \"04/22\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Visa\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"123412341234\"",
+                  "offset": 30
+                },
+                {
+                  "val": "\"04/22\"",
+                  "offset": 46
+                }
+              ],
+              "location": "steps.com.productsteps.ProductSteps.user_enters_card_info(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 31000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user validates success message",
+            "match": {
+              "location": "steps.com.productsteps.ProductSteps.user_validates_success_message()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.IndexOutOfBoundsException: Index: 1, Size: 1\n\tat java.util.ArrayList.rangeCheck(ArrayList.java:659)\n\tat java.util.ArrayList.get(ArrayList.java:435)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)\n\tat com.sun.proxy.$Proxy15.get(Unknown Source)\n\tat steps.com.productsteps.ProductSteps.user_validates_product_details(ProductSteps.java:49)\n\tat ✽.user validates product details \"MyMoney\", \"4\", \"Techtorial\", \"2200 E Devon\", \"Des Plaines\", \"IL\", \"60018\", \"Visa\", \"123412341234\", \"04/22\"(file:///Users/ayhancolakel/Documents/TechtorialCucumberr/src/test/resources/com.products/productsScenario.feature:18)\n",
+              "duration": 204000000,
+              "status": "failed"
+            },
+            "line": 18,
+            "name": "user validates product details \"MyMoney\", \"4\", \"Techtorial\", \"2200 E Devon\", \"Des Plaines\", \"IL\", \"60018\", \"Visa\", \"123412341234\", \"04/22\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MyMoney\"",
+                  "offset": 31
+                },
+                {
+                  "val": "\"4\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"Techtorial\"",
+                  "offset": 47
+                },
+                {
+                  "val": "\"2200 E Devon\"",
+                  "offset": 61
+                },
+                {
+                  "val": "\"Des Plaines\"",
+                  "offset": 77
+                },
+                {
+                  "val": "\"IL\"",
+                  "offset": 92
+                },
+                {
+                  "val": "\"60018\"",
+                  "offset": 98
+                },
+                {
+                  "val": "\"Visa\"",
+                  "offset": 107
+                },
+                {
+                  "val": "\"123412341234\"",
+                  "offset": 115
+                },
+                {
+                  "val": "\"04/22\"",
+                  "offset": 131
+                }
+              ],
+              "location": "steps.com.productsteps.ProductSteps.user_validates_product_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@products"
+          },
+          {
+            "name": "@outline"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-13T17:46:10.989Z",
+        "line": 22,
+        "name": "Validation of New Product Creation",
+        "description": "",
+        "id": "validation-of-products-page;validation-of-new-product-creation;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 669000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user is on product website home page",
+            "match": {
+              "location": "steps.com.productsteps.ProductSteps.user_is_on_product_website_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 315000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user enters product info \"FamilyAlbum\" and \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"FamilyAlbum\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"2\"",
+                  "offset": 43
+                }
+              ],
+              "location": "steps.com.productsteps.ProductSteps.user_enters_product_info_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 394000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user enters the address info \"Academy\", \"2200 E Devon\", \"Austin\", \"TX\", \"90011\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Academy\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"2200 E Devon\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"Austin\"",
+                  "offset": 56
+                },
+                {
+                  "val": "\"TX\"",
+                  "offset": 66
+                },
+                {
+                  "val": "\"90011\"",
+                  "offset": 72
+                }
+              ],
+              "location": "steps.com.productsteps.ProductSteps.user_enters_the_address_info(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 355000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user enters card info \"MasterCard\", \"124521541254\", \"08/21\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MasterCard\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"124521541254\"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"08/21\"",
+                  "offset": 52
+                }
+              ],
+              "location": "steps.com.productsteps.ProductSteps.user_enters_card_info(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 24000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user validates success message",
+            "match": {
+              "location": "steps.com.productsteps.ProductSteps.user_validates_success_message()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.IndexOutOfBoundsException: Index: 1, Size: 1\n\tat java.util.ArrayList.rangeCheck(ArrayList.java:659)\n\tat java.util.ArrayList.get(ArrayList.java:435)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)\n\tat com.sun.proxy.$Proxy15.get(Unknown Source)\n\tat steps.com.productsteps.ProductSteps.user_validates_product_details(ProductSteps.java:49)\n\tat ✽.user validates product details \"FamilyAlbum\", \"2\", \"Academy\", \"2200 E Devon\", \"Austin\", \"TX\", \"90011\", \"MasterCard\", \"124521541254\", \"08/21\"(file:///Users/ayhancolakel/Documents/TechtorialCucumberr/src/test/resources/com.products/productsScenario.feature:18)\n",
+              "duration": 158000000,
+              "status": "failed"
+            },
+            "line": 18,
+            "name": "user validates product details \"FamilyAlbum\", \"2\", \"Academy\", \"2200 E Devon\", \"Austin\", \"TX\", \"90011\", \"MasterCard\", \"124521541254\", \"08/21\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"FamilyAlbum\"",
+                  "offset": 31
+                },
+                {
+                  "val": "\"2\"",
+                  "offset": 46
+                },
+                {
+                  "val": "\"Academy\"",
+                  "offset": 51
+                },
+                {
+                  "val": "\"2200 E Devon\"",
+                  "offset": 62
+                },
+                {
+                  "val": "\"Austin\"",
+                  "offset": 78
+                },
+                {
+                  "val": "\"TX\"",
+                  "offset": 88
+                },
+                {
+                  "val": "\"90011\"",
+                  "offset": 94
+                },
+                {
+                  "val": "\"MasterCard\"",
+                  "offset": 103
+                },
+                {
+                  "val": "\"124521541254\"",
+                  "offset": 117
+                },
+                {
+                  "val": "\"08/21\"",
+                  "offset": 133
+                }
+              ],
+              "location": "steps.com.productsteps.ProductSteps.user_validates_product_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@products"
+          },
+          {
+            "name": "@outline"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-13T17:46:12.920Z",
+        "line": 23,
+        "name": "Validation of New Product Creation",
+        "description": "",
+        "id": "validation-of-products-page;validation-of-new-product-creation;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 601000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user is on product website home page",
+            "match": {
+              "location": "steps.com.productsteps.ProductSteps.user_is_on_product_website_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 313000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user enters product info \"ScreenSaver\" and \"5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ScreenSaver\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"5\"",
+                  "offset": 43
+                }
+              ],
+              "location": "steps.com.productsteps.ProductSteps.user_enters_product_info_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 303000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user enters the address info \"Techtorial\", \"2200 E Devon\", \"Chicago\", \"IL\", \"60101\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Techtorial\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"2200 E Devon\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"Chicago\"",
+                  "offset": 59
+                },
+                {
+                  "val": "\"IL\"",
+                  "offset": 70
+                },
+                {
+                  "val": "\"60101\"",
+                  "offset": 76
+                }
+              ],
+              "location": "steps.com.productsteps.ProductSteps.user_enters_the_address_info(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 350000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user enters card info \"American Express\", \"321654987112\", \"04/22\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"American Express\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"321654987112\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"04/22\"",
+                  "offset": 58
+                }
+              ],
+              "location": "steps.com.productsteps.ProductSteps.user_enters_card_info(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 25000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user validates success message",
+            "match": {
+              "location": "steps.com.productsteps.ProductSteps.user_validates_success_message()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.IndexOutOfBoundsException: Index: 1, Size: 1\n\tat java.util.ArrayList.rangeCheck(ArrayList.java:659)\n\tat java.util.ArrayList.get(ArrayList.java:435)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)\n\tat com.sun.proxy.$Proxy15.get(Unknown Source)\n\tat steps.com.productsteps.ProductSteps.user_validates_product_details(ProductSteps.java:49)\n\tat ✽.user validates product details \"ScreenSaver\", \"5\", \"Techtorial\", \"2200 E Devon\", \"Chicago\", \"IL\", \"60101\", \"American Express\", \"321654987112\", \"04/22\"(file:///Users/ayhancolakel/Documents/TechtorialCucumberr/src/test/resources/com.products/productsScenario.feature:18)\n",
+              "duration": 203000000,
+              "status": "failed"
+            },
+            "line": 18,
+            "name": "user validates product details \"ScreenSaver\", \"5\", \"Techtorial\", \"2200 E Devon\", \"Chicago\", \"IL\", \"60101\", \"American Express\", \"321654987112\", \"04/22\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ScreenSaver\"",
+                  "offset": 31
+                },
+                {
+                  "val": "\"5\"",
+                  "offset": 46
+                },
+                {
+                  "val": "\"Techtorial\"",
+                  "offset": 51
+                },
+                {
+                  "val": "\"2200 E Devon\"",
+                  "offset": 65
+                },
+                {
+                  "val": "\"Chicago\"",
+                  "offset": 81
+                },
+                {
+                  "val": "\"IL\"",
+                  "offset": 92
+                },
+                {
+                  "val": "\"60101\"",
+                  "offset": 98
+                },
+                {
+                  "val": "\"American Express\"",
+                  "offset": 107
+                },
+                {
+                  "val": "\"321654987112\"",
+                  "offset": 127
+                },
+                {
+                  "val": "\"04/22\"",
+                  "offset": 143
+                }
+              ],
+              "location": "steps.com.productsteps.ProductSteps.user_validates_product_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@products"
+          },
+          {
+            "name": "@outline"
+          }
+        ]
+      }
+    ],
+    "name": "Validation of Products Page",
+    "description": "",
+    "id": "validation-of-products-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/com.products/productsScenario.feature",
+    "tags": []
+  }
+]
